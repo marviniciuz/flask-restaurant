@@ -1,0 +1,17 @@
+{% for r in restaurantes %}
+<li class="collection-item avatar">
+    <i class="material-icons circle red">restaurant</i>
+    <span class="title" style="font-weight: bold;">{{ r.nome }}</span>
+    <p class="grey-text">{{ r.tipo_cozinha }}</p>
+    
+    <a href="#!" 
+       class="secondary-content red-text"
+       hx-delete="/deletar/{{ r.id }}"
+       hx-target="#lista-restaurantes"
+       hx-confirm="Tem certeza que deseja excluir?">
+       <i class="material-icons">delete</i>
+    </a>
+</li>
+{% else %}
+<li class="collection-item">Nenhum restaurante encontrado.</li>
+{% endfor %}
