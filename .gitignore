@@ -1,19 +1,35 @@
+# --- python ---
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
+
+# --- embientes ---
 venv/
 env/
 .venv/
 .env
 
+
+# --- db ---
 *.db
 *.sqlite3
 restaurantes.db
 
+# --- ide ---
 .vscode/
 .idea/
 
+# --- db ---
 .DS_Store
 Thumbs.db
+instance/
+
+# --- pytest ---
+.pytest_cache/
+.coverage
+htmlcov/
+relatorio.html
+assets/
+coverage.xml
